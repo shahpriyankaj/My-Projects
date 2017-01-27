@@ -1,0 +1,246 @@
+﻿@charset "utf-8";
+body {
+	margin:0;
+    width:80%;
+    background-color:#d4f7f2;
+}
+.main {
+    margin:0 20% 0 20%;
+    width:100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner {
+    width:100%;
+    margin-bottom:0.5%;
+}
+.banner .banner_img1 {
+    height:100%;
+    width:25%;
+}
+.banner .banner_img2{
+    height:100%;
+    width:65%;
+}
+
+.menu_nav {
+	margin:0.1% 1% 0.5% 5%;
+	padding:0;
+	height:50px;
+    width:90%;
+}
+
+.menu_nav td{
+    
+    background-color:#000066;
+    border:outset;
+    border-color:#ffffff;
+}
+.menu_nav td a{
+	padding:5px 20px;
+	font-size:25px;
+	font-weight:bold;
+    color:#ffffff;
+}
+.menu_nav td a:hover {
+	text-decoration:underline;
+	color:#247aef;
+}
+.mainbar {
+    padding: 0;
+    margin: 0;
+    float:left;
+    width: 90%;
+}
+.mainbar .col_one {
+    margin: 0 0 0 0.1%;
+    float: left;
+    width:30%;
+}
+.mainbar .col_one .article{
+    background:#ef822d;
+    text-align:center;
+    border:ridge;
+    border-color:#000000;
+    margin:0 0 0.5%;
+    padding:0 0.1% 3% 0.1%;
+}
+
+.mainbar .col_one .article table{
+    text-align:center;
+    padding-left:20%;
+}
+.mainbar .col_one .article h2{
+    color:#383c66;
+}
+.mainbar .col_one .article strong{
+    text-align:center;
+    color:#f0f6f6;
+    font-size:20px;
+}
+.mainbar .col_one .article1 h1{
+    font-weight:bold;
+}
+.mainbar .col_one .article1 img{
+	height:72%;
+    width:72%;
+}
+.mainbar .col_one .article1 {
+    text-align: center;
+    border:ridge;
+    border-color:#000000;
+    background-color:#f0f6f6;
+}
+.mainbar .col_two {
+	float:left;
+	width:69%;
+    margin:0 0 0 0.5%;
+
+}
+.mainbar .about {
+	width:100%;
+    text-align:center;
+    border:ridge;
+    border-color:#000000;
+    padding-left:1%;
+    padding-right:1%;
+    background:#ecc270;
+}
+
+.mainbar .about p{
+    font-size:26px;
+	line-height:30px;
+	font-weight:bold;
+	text-decoration:none;
+    color:#933434;
+    font-style:oblique;
+    font-family:Arial;
+}
+
+.mainbar .about .aboutFont{
+    font-size:30px;
+	text-decoration:none;
+    color:#383c66;
+    font-family:Broadway;
+}
+.mainbar .about h1{
+    color:#40752b;
+    text-align:center;
+    font-style:italic;
+    font-family:Algerian;
+    font-size:40px;
+
+}
+.mainbar .col_two .post_content {
+    background:#ecc270;
+    border:ridge;
+    border-color:#000000;
+    margin:0 0 0.5%;
+    padding:0 3% 0.5% 3%;
+}
+
+.mainbar .col_two .post_content img{
+    padding-top:2%;
+}
+.mainbar .col_two .post_content tr{
+    color:#383c66;
+    font-size:25px;
+}
+.mainbar .col_two .post_content table{
+    font-family:'Times New Roman', Times, serif;
+    font-size:25px;
+    font-weight:bold;
+    width:100%;
+}
+.mainbar .col_two .post_content .serviceArea{
+    padding-left:10%;
+    text-align:center;
+    margin-bottom:7%;
+}
+.mainbar .col_two .post_content table img{
+    height:290px;
+    width:250px;
+}
+
+.mainbar .col_two .post_content1 {
+    border:ridge;
+    border-color:#000000;
+    padding:2% 0 1.8% 1%;  
+    height:100%; 
+    background-color:#eee0e0;
+}
+.mainbar .col_two .post_content p{
+    font-size:23px;
+	line-height:30px;
+	font-weight:bold;
+	text-decoration:none;
+    color:#9d4646;
+    font-style:oblique;
+    text-align:center;
+
+}
+.mainbar .post_content h1{
+    color:#40752b;
+    text-align:center;
+    font-style:italic;
+    font-family:Algerian;
+    font-size:40px;
+}
+.mainbar .col_two .post_content1 img{
+	height:80%;
+    width:32.5%;
+}
+
+.mainbar .col_two .resource{
+    background:#ecc270;
+    border:ridge;
+    border-color:#000000;
+    margin:0 0 0.5%;
+    padding:3% 3% 6% 3%;
+}
+.mainbar .resource h1{
+    color:#40752b;
+    text-align:center;
+    font-style:italic;
+    font-family:Algerian;
+    font-size:40px;
+}
+.mainbar .col_two .resource p{
+    font-size:23px;
+	line-height:30px;
+	font-weight:bold;
+	text-decoration:none;
+    color:#9d4646;
+    font-style:oblique;
+    text-align:center;
+}
+.mainbar .col_two .resource table img{
+    height:400px;
+    width:300px;
+    border:solid;
+}
+.mainbar .col_two .resource img{
+    height:150px;
+    width:100%;
+}
+.mainbar .col_two .resource table{
+    text-align:center;
+    font-family:Arial;
+    font-size:25px;
+    padding-left:15%;
+}
+
+.mainbar .col_two .post_content .accountLegend{
+    font-family:'Times New Roman', Times, serif;
+    color:#40752b;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.mainbar .col_two .post_content .recoverLegend{
+    font-family:'Times New Roman', Times, serif;
+    color:#40752b;
+    font-size:25px;
+    font-weight:bold;
+}
+
+
