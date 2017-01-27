@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment3_PriyankaShah" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network IP Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-UP-rmu">
+                                <rect key="frame" x="145" y="57" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lv5-Lw-SYE" userLabel="IpText">
+                                <rect key="frame" x="304" y="57" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-vJ-fqM" userLabel="NetText">
+                                <rect key="frame" x="304" y="95" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Range Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjs-qA-lkZ">
+                                <rect key="frame" x="28" y="28" width="544" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.4428267045" green="0.035252115639999998" blue="0.040399018639999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y4o-0s-gnR">
+                                <rect key="frame" x="28" y="171" width="544" height="421"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ipAddress" textLabel="PvB-sJ-A5X" style="IBUITableViewCellStyleDefault" id="cTh-bs-1sH">
+                                        <rect key="frame" x="0.0" y="50" width="544" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cTh-bs-1sH" id="Esl-K9-nWy">
+                                            <rect key="frame" x="0.0" y="0.0" width="544" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PvB-sJ-A5X">
+                                                    <rect key="frame" x="15" y="0.0" width="514" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-KY-BG5">
+                                <rect key="frame" x="241" y="133" width="118" height="30"/>
+                                <color key="backgroundColor" red="0.44282670454545459" green="0.035252115637528995" blue="0.040399018639460132" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get IP Addresses">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdq-Yf-yKy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Mask Bits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZa-YQ-663">
+                                <rect key="frame" x="145" y="96" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CZa-YQ-663" firstAttribute="width" secondItem="pCh-UP-rmu" secondAttribute="width" id="0vo-Ta-8XZ"/>
+                            <constraint firstItem="lv5-Lw-SYE" firstAttribute="top" secondItem="Xjs-qA-lkZ" secondAttribute="bottom" constant="8" id="4yH-W7-mcV"/>
+                            <constraint firstItem="CZa-YQ-663" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="5TW-fM-Ik2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xjs-qA-lkZ" secondAttribute="trailing" constant="8" id="6mr-xd-n8P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lv5-Lw-SYE" secondAttribute="trailing" constant="-8" id="9Dd-MQ-u2F"/>
+                            <constraint firstItem="FIr-vJ-fqM" firstAttribute="width" secondItem="lv5-Lw-SYE" secondAttribute="width" id="EeU-Tc-o58"/>
+                            <constraint firstItem="Y4o-0s-gnR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJ5-pC-pzO"/>
+                            <constraint firstItem="FIr-vJ-fqM" firstAttribute="top" secondItem="lv5-Lw-SYE" secondAttribute="bottom" constant="8" id="Mba-Zh-3HV"/>
+                            <constraint firstItem="Xjs-qA-lkZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NUV-UB-xSX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FIr-vJ-fqM" secondAttribute="trailing" constant="-8" id="NbZ-fY-t8Z"/>
+                            <constraint firstItem="Y4o-0s-gnR" firstAttribute="top" secondItem="bXy-KY-BG5" secondAttribute="bottom" constant="8" id="RdE-i9-yNg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y4o-0s-gnR" secondAttribute="trailing" constant="8" id="Ukc-BE-ZXf"/>
+                            <constraint firstItem="bXy-KY-BG5" firstAttribute="top" secondItem="FIr-vJ-fqM" secondAttribute="bottom" constant="8" id="jXH-o7-dwv"/>
+                            <constraint firstItem="lv5-Lw-SYE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="jxP-Nr-bWo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y4o-0s-gnR" secondAttribute="bottom" constant="8" id="kr3-0J-ydI"/>
+                            <constraint firstItem="FIr-vJ-fqM" firstAttribute="leading" secondItem="CZa-YQ-663" secondAttribute="trailing" constant="8" id="lI6-fZ-cOs"/>
+                            <constraint firstItem="Y4o-0s-gnR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="o37-5l-yhH"/>
+                            <constraint firstItem="CZa-YQ-663" firstAttribute="top" secondItem="pCh-UP-rmu" secondAttribute="bottom" constant="18" id="oD1-ge-8ZQ"/>
+                            <constraint firstItem="FIr-vJ-fqM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="tIW-7x-0mL"/>
+                            <constraint firstItem="pCh-UP-rmu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="ubh-Gc-5kp"/>
+                            <constraint firstItem="bXy-KY-BG5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wSZ-wF-7MG"/>
+                            <constraint firstItem="Xjs-qA-lkZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xjn-67-kfI"/>
+                            <constraint firstItem="lv5-Lw-SYE" firstAttribute="leading" secondItem="pCh-UP-rmu" secondAttribute="trailing" constant="8" id="y50-PS-IND"/>
+                            <constraint firstItem="pCh-UP-rmu" firstAttribute="top" secondItem="Xjs-qA-lkZ" secondAttribute="bottom" constant="8" id="yHY-EN-q5d"/>
+                            <constraint firstItem="Xjs-qA-lkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="yRi-SX-x88"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jxP-Nr-bWo"/>
+                                <exclude reference="tIW-7x-0mL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ipTable" destination="Y4o-0s-gnR" id="E1K-9P-h4w"/>
+                        <outlet property="ipText" destination="lv5-Lw-SYE" id="Nid-F2-9gr"/>
+                        <outlet property="netText" destination="FIr-vJ-fqM" id="Nay-9h-1nd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
